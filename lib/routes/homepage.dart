@@ -49,8 +49,6 @@ class _HomePageState extends State<HomePage> {
           'presence_penalty': 0.0,
         }),
       );
-
-      // Do something with the response
       Map<String, dynamic> newresponse = jsonDecode(response.body);
 
       return newresponse['choices'][0]['text'];
